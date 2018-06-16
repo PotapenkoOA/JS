@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" itemscope="itemscope" itemtype="http://schema.org/Blog" lang="ru-RU">
+<head>
+<meta charset="utf-8">
+
+<title >Please, introduce yourself</title>
+</head>
+<body>
+
+<p><h3>Please, introduce yourself </h3></p>
+Name:<br/><input id="person_name" /><br/>
+Surname:<br/><input id="person_surname" /><br/>
+<h4>Address </h4>
+Apartment:<br/><input id="apartment" /><br/>
+Street:<br/><input id="street" /><br/>
+City:<br/><input id="city" /><br/>
+Country:<br/><input id="country" /><br/>
+Post code:<br/><input id="post_code" /> <br/><br/>
+<button id="subm" onClick="foo()">Nice to meet you</button>
+
+<script>
+        var value ={};
+        function foo(){
+            value.person_name 		= document.getElementById("person_name").value;
+			value.person_surname 	= document.getElementById("person_surname").value;
+			value.address = {};
+			value.address.apartment = document.getElementById("apartment").value;
+			value.address.street 	= document.getElementById("street").value;
+			value.address.city 		= document.getElementById("city").value;
+			value.address.country	= document.getElementById("country").value;
+			value.address.post_code	= document.getElementById("post_code").value;
+			
+			console.log( value );
+        }
+ </script>
+
+
+</body>
+</html>
